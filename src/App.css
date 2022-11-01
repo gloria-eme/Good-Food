@@ -2,13 +2,8 @@
 
 #root {
   min-width: 250px;
- 
- 
-  text-align: center;
-}
-.App {
 
-  
+  text-align: center;
 }
 
 .header {
@@ -31,8 +26,8 @@
   text-align: center;
   text-transform: uppercase;
   font-weight: 900;
-  text-decoration:none;
-  padding: .5em;
+  text-decoration: none;
+  padding: 0.5em;
 }
 
 .nav:hover {
@@ -44,26 +39,31 @@
   margin-bottom: 2em;
 }
 .box {
-  padding: 2em
+  padding: 2em;
 }
 
+.sectionPlatos {
+ 
+  
+}
 
 .liPlatos {
-border: 2px solid rgba(75, 66, 7, 0.623);
-padding: .5em;
+  /* border: 2px solid rgba(75, 66, 7, 0.623); */
+   padding: 1em;
+   margin-top: 1em;
+}
+.namePlatos {
+margin: 1em;
+height: 4em;
 }
 
-.imgPlatos{
-
-
+.imgPlatos {
 }
 .h2Platos {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: 400;
-  font-size: 1.2em
+  font-size: 1.2em;
 }
-
-
 
 @keyframes logo-spin {
   from {
