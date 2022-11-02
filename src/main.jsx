@@ -5,6 +5,9 @@ import App from './App';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home';
 import FilterPlatos from './components/FilterPlatos';
+import NotFound from './pages/404';
+import Plato from './pages/Plato';
+import AddAFood from './pages/AddAFood';
 
 
 
@@ -18,9 +21,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/" element = {<App />}>
         <Route index element = {<Home />}/>
         <Route path="/platos" element={<FilterPlatos/>} />
-        {/* <Route path="/image/:id" element={<Image />} />
-        <Route path="/addimage" element={<AddImage />} />
-        <Route path="*" element={<NotFound />} />  */}
+        <Route path="/plato/:id" element={<Plato />} />
+       <Route path="/addafood" element={<AddAFood />} />
+        <Route path="*" element={<NotFound />} /> 
         </Route>
       </Routes>
     </BrowserRouter>

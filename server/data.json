@@ -5,139 +5,70 @@
       "name": "Alcachofas al horno con pico de gallo",
       "img": "https://www.elmueble.com/medio/2022/05/31/alcachofas-al-horno-con-pico-de-gallo_5d54f0a8_779x1038.jpg",
       "time": "1 hora",
-      "ingredients": [
-        "alcachofas",
-        "limón",
-        "carne picada",
-        "cebolla",
-        "tomates",
-        "lima",
-        "cilantro"
-      ]
+      "ingredients": "alcachofas, limón, carne picada, cebolla, tomates, lima y cilantro"
     },
     {
       "id": "2",
       "name": "Arroz salteado con heura y verduras al curry",
       "img": "https://www.elmueble.com/medio/2022/05/31/arroz-basmati-salteado-con-heura-y-verduras-variadas-al-curry_e06f5c80_766x516.jpg",
       "time": "45 min",
-      "ingredients": [
-        "arroz",
-        "zanahoria",
-        "pimiento rojo y verde",
-        "heura",
-        "cebollino",
-        "curry"
-      ]
+      "ingredients": "arroz, zanahoria, pimiento rojo, pimiento verde, heura, cebollino y curry."
     },
     {
       "id": "3",
       "name": "Tataki de atún",
       "img": "https://www.elmueble.com/medio/2022/05/31/tataki-de-atun_0ebbef48_509x339.jpg",
       "time": "1 hora",
-      "ingredients": [
-        " atún rojo",
-        "Semillas de sésamo",
-        "naranja y limón",
-        "alcachofas",
-        "limón",
-        "salsa de soja",
-        "algas"
-      ]
+      "ingredients": "atún rojo, demillas de sésamo, naranja y limón, alcachofas, limón, salsa de soja y algas."
     },
     {
       "id": "4",
-      "name": "Guiso de bacalao con alubias y acelgas",
+      "name": "Guiso de bacalao con alubias",
       "img": "https://www.elmueble.com/medio/2021/01/25/guiso-espinacas-00526679_625f4c8f_600x800.jpg",
       "time": "1 hora",
-      "ingredients": ["bacalao", "alubias blancas", "huevos", "", "", "", ""]
+      "ingredients": "bacalao, alubias blancas, acelgas y  huevos."
     },
     {
       "id": "5",
       "name": "Espárragos y tirabeque con leche de coco",
       "img": "https://www.elmueble.com/medio/2022/05/31/curry-de-tirabeques-y-esparragos-con-leche-de-coco-y-arroz-basmati_36160edb_600x405.jpg",
       "time": "40 min",
-      "ingredients": [
-        "espárragos",
-        "tirabeques",
-        "leche de coco",
-        "pimiento rojo",
-        "cebollino",
-        "arroz",
-        "maíz"
-      ]
+      "ingredients": "espárragos, tirabeques, leche de coco, pimiento rojo, cebollino, arroz y maíz."
     },
     {
       "id": "6",
       "name": "Salteado de verduras con avena",
       "img": "https://www.elmueble.com/medio/2021/01/25/salteado-de-verduras-00502558_550161e3_600x858.jpg",
       "time": "1 hora",
-      "ingredients": [
-        "judias verdes",
-        "cebolletas",
-        "tomates secos",
-        "annacardos",
-        "avena",
-        "condimentos"
-      ]
+      "ingredients": "judias verdes, cebolletas, tomates secos, anacardos, avena y condimentos."
     },
     {
       "id": "7",
       "name": "Ramen vegano",
       "img": "https://www.elmueble.com/medio/2021/01/25/ramen-vegano-00515855_bffa055a_600x728.jpg",
       "time": "30 min",
-      "ingredients": [
-        "setas shiitake",
-        "tofu",
-        "cebolla",
-        "algas",
-        "jengibre",
-        "pasta ramen",
-        "salsa de soja"
-      ]
+      "ingredients": "setas shiitake, tofu, cebolla, algas, jengibre, pasta ramen y salsa de soja."
     },
     {
       "id": "8",
       "name": "Verduras al horno con huevo poché",
       "img": "https://www.elmueble.com/medio/2021/01/25/verduras-huevo-poche-00523510_9cec8211_600x796.jpg",
       "time": "30 min",
-      "ingredients": [
-        "huevos",
-        "espárragos",
-        "judías verdes",
-        "zanahorias",
-        "pimiento rojo",
-        "condimentos"
-      ]
+      "ingredients": "huevos, espárragos, judías verdes, zanahorias, pimiento rojo y condimentos."
     },
     {
       "id": "9",
       "name": "Crema de garbanzos",
       "img": "https://www.elmueble.com/medio/2021/01/25/crema-de-garbanzos-00528560_37ce6414_600x788.jpg",
       "time": "1 hora",
-      "ingredients": [
-        "garbanzos",
-        "calabaza",
-        "cebolla",
-        "zanahorias",
-        "acelgas",
-        "queso"
-      ]
+      "ingredients": "garbanzos, calabaza, cebolla, zanahorias, acelgas y queso."
     },
     {
       "id": "10",
       "name": "Salteado de pasta con verduras",
       "img": "https://www.elmueble.com/medio/2021/01/25/pasta-verduras-00501416_4239a9fc_600x900.jpg",
       "time": "30 min",
-      "ingredients": [
-        "pasta",
-        "alcachofas",
-        "cebolla",
-        "espinacas",
-        "champiñones",
-        "queso",
-        "aceitunas negras",
-        "condimentos"
-      ]
+      "ingredients": "pasta, alcachofas, cebolla, espinacas, champiñones, queso, aceitunas negras y condimentos."
     }
   ]
 }

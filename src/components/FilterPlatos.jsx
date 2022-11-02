@@ -1,40 +1,39 @@
 import { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
-import { Link, Outlet } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import * as React from 'react';
 import ImageListItemBar from '@mui/material/ImageListItemBar';
-import ListSubheader from '@mui/material/ListSubheader';
-import IconButton from '@mui/material/IconButton';
-import InfoIcon from '@mui/icons-material/Info';
-
-
 import Box from '@mui/material/Box';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
-import getData from '../../api/getData';
+
 import { useDebounce } from 'use-debounce';
+import getPlatos from '../../api/getPlatos';
 
 
 const FilterPlatos = () => {
   const [filter, setFilter] = useState('');
+  const [filter2, setFilter2] = useState('');
   const [platos, setPlatos] = useState([]);
 
   const [debounceFilter] = useDebounce(filter, 500);
 
   useEffect(() => {
-    getData().then((res) => setPlatos(res));
+    getPlatos().then((res) => setPlatos(res));
   }, [debounceFilter]);
 
   return (
     <Box className="box">
-      <input
-        className="filter"
-        type="text"
-        value={filter}
-        onChange={(e) => setFilter(e.target.value)}
-      />
-      <ImageList className='sectionPlatos' cols={4}>
-        { platos.filter((item) => item.name.toLowerCase().includes(filter.toLowerCase()))
+      <div className='divFilter'>
+        <p className='pFilter'>Puedes buscar recetas según sus ingredientes</p>
+        <input className="filter1" type="text" value={filter}
+          onChange={(e) => setFilter(e.target.value)}/>
+        <input className="filter2" type="text" value={filter2}
+          onChange={(e) => setFilter2(e.target.value)}/> 
+      </div>
+      <ImageList className="sectionPlatos" cols={4}>
+        {platos
+          .filter((item) => item.ingredients.includes(filter))
+          .filter((item) => item.ingredients.includes(filter2))
           .map((item) => (
             <ImageListItem className="liPlatos" key={item.name}>
               <img
@@ -43,17 +42,9 @@ const FilterPlatos = () => {
                 alt={item.name}
                 loading="lazy"
               />
-              <ImageListItemBar className='namePlatos'
-                title={item.name}
-                actionIcon={
-                  <IconButton
-                    sx={{ color: 'rgba(255, 255, 255, 0.54)' }}
-                    aria-label={`info about ${item.name}`}
-                  >
-                    <InfoIcon />
-                  </IconButton>
-                }
-              />
+              <Link to={`/plato/${item.id}`} key={item.name}>
+                <ImageListItemBar className="namePlatos" title={item.name} />
+              </Link>
             </ImageListItem>
           ))}
       </ImageList>
